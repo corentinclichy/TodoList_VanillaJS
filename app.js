@@ -1,3 +1,6 @@
+// TODO:
+// -  ADD A FILTER OPTION
+
 class Todo {
   constructor() {
     //adding todo selector
