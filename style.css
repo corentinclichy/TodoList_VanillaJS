@@ -44,6 +44,13 @@ h1 {
 .add-todo {
   color: #355d7a;
   cursor: pointer;
+  transition: all 1s ease;
+}
+
+.add-todo:hover {
+  background: #355d7a;
+  color: white;
+  cursor: pointer;
 }
 
 .todo-container {
@@ -60,6 +67,7 @@ h1 {
   justify-content: space-between;
   background: white;
   padding: 0.5rem;
+  transition: all 1s ease;
 }
 
 .todo button {
@@ -94,6 +102,7 @@ h1 {
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
+  transition: all 0.4s ease;
 }
 .edit-todo:focus {
   outline: 1px solid rgba(80, 80, 80, 0.253);
