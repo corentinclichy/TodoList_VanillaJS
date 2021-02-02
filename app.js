@@ -86,8 +86,11 @@ class Todo {
     const todo = item.parentElement.getElementsByClassName("edit-todo");
 
     if (item.classList[0] === "delete-button") {
-      allTodo.remove();
-      console.log(allTodo);
+      allTodo.classList.add("deleteAnimation");
+      allTodo.addEventListener("transitionend", () => {
+        allTodo.remove();
+        this.updateCounter();
+      });
       this.deleteLocalStorageTodo(todo[0].value);
     } else if (item.classList[0] === "check-button") {
       todo[0].classList.toggle("completed");

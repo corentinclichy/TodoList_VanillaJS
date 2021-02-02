@@ -67,7 +67,7 @@ h1 {
   justify-content: space-between;
   background: white;
   padding: 0.5rem;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 
 .todo button {
@@ -107,4 +107,9 @@ h1 {
 .edit-todo:focus {
   outline: 1px solid rgba(80, 80, 80, 0.253);
   padding: 0.5rem;
+}
+
+.deleteAnimation {
+  transform: translateX(8rem);
+  opacity: 0;
 }
